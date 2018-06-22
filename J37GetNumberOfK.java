@@ -10,9 +10,7 @@ class Solution {
         else return 0;
     }
     public int getFirstnum(int [] array,int start,int end,int k){
-        // int length = array.length;
         int midIndex = (start + end) / 2;
-        // int midnum = array[midIndex];
         while (start <= end) {
             if(array[midIndex] > k) end = midIndex - 1;
             else if(array[midIndex] < k) start = midIndex + 1;
