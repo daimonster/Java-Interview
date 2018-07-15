@@ -1,3 +1,4 @@
+package bin.test;
 import java.util.*;
 public class test {
  
