@@ -16,19 +16,17 @@ public class Solution {
         ListNode head1 = pHead1;
         ListNode head2 = pHead2;
         while (head1 != null) {
-            maps.push(head1);
+            stack1.push(head1);
             head1 = head1.next;
         }
         while (head2 != null) {
-            maps.push(head2);
+            stack2.push(head2);
             head2 = head2.next;
         }
         ListNode res = null;
         while (!stack1.empty() && !stack2.empty()) {
-            if(stack1.peek() == stack2.peek()) {
-                res = stack1.peek();
-                break;
-            };
+            if(stack1.peek() != stack2.peek()) break;
+            res = stack1.peek();
             stack1.pop();
             stack2.pop();
             
