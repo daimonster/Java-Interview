@@ -1,3 +1,4 @@
+package bin.solution.j37;
 import java.util.Arrays;
 
 class Solution {
