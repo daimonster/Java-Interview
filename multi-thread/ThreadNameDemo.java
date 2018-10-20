@@ -25,3 +25,4 @@ public class ThreadNameDemo{
         new Thread(my).start();
     }
 };
+ 
